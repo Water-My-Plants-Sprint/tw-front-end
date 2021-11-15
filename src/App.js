@@ -18,6 +18,9 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/register" component={Register} />
+        <Route exact path = "/access">
+          
+        </Route>
 
         <Route exact path="/" component={Login} />
         <Route exact path="/plants">

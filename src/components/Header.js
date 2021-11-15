@@ -7,10 +7,13 @@ import userinfo from "../userinfo";
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Plants", href: "/plants", current: false },
+  { name: "Accessibility", href: "/access"},
+
 ];
 const userNavigation = [
   { name: "Your Profile", href: "/profile" },
   { name: "Sign out", href: "/logout" },
+  { name: "Accessibility", href: "/access"},
 ];
 
 function classNames(...classes) {
