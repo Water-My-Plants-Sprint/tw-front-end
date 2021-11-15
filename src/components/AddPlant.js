@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {
+  // useEffect,
+  useState,
+} from "react";
 
 const initialForm = {
   plant_id: 8,
@@ -10,7 +13,11 @@ const initialForm = {
 };
 
 const AddPlant = (props) => {
-  const { plantsList, setPlantsList, handleAdd, setOpen } = props;
+  const {
+    // plantsList, setPlantsList,
+    handleAdd,
+    setOpen,
+  } = props;
 
   const [form, setForm] = useState(initialForm);
   const handleChange = (e) => {

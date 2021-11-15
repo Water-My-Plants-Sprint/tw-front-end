@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { useHistory } from "react-router-dom";
 import AddPlant from "./AddPlant";
 import { Dialog, Transition } from "@headlessui/react";
-import { SpeakerphoneIcon, XIcon } from "@heroicons/react/outline";
+import { SpeakerphoneIcon } from "@heroicons/react/outline";
 
 const PlantsList = (props) => {
   const { plantsList, setPlantsList } = props;
