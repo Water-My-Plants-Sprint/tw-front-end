@@ -1,5 +1,3 @@
-import React from "react";
-
 const plantdata = [
   {
     plant_id: 1,

@@ -1,5 +1,3 @@
-import React from "react";
-
 const userinfo = {
   name: "Tom Cook",
   email: "tom@example.com",

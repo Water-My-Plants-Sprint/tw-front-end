@@ -1,26 +1,14 @@
 import React, { useState, Fragment } from "react";
 import { useParams } from "react-router-dom";
-import {
-  Dialog,
-  Popover,
-  RadioGroup,
-  Tab,
-  Transition,
-} from "@headlessui/react";
-import {
-  CurrencyDollarIcon,
-  GlobeIcon,
-  MenuIcon,
-  SearchIcon,
-  ShoppingBagIcon,
-  UserIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import { StarIcon } from "@heroicons/react/solid";
+import { Dialog, Transition } from "@headlessui/react";
+
 import EditPlant from "./EditPlant";
 
 const Plant = (props) => {
-  const { plantsList, setPlantsList } = props;
+  const {
+    plantsList,
+    // setPlantsList
+  } = props;
   const { id } = useParams();
 
   const arrayNum = id - 1;
@@ -96,15 +84,6 @@ const Plant = (props) => {
                     setOpen={setOpen}
                   />{" "}
                 </div>
-                {/* <div className="mt-5 sm:mt-6">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
-                    onClick={() => setOpen(false)}
-                  >
-                    Go back to dashboard
-                  </button>
-                </div> */}
               </div>
             </Transition.Child>
           </div>

@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {
+  // useEffect,
+  useState,
+} from "react";
 
 const initialForm = {
   plant_id: "",
@@ -10,7 +13,7 @@ const initialForm = {
 };
 
 const EditPlant = (props) => {
-  const { handleEditCancel, plant, setPlant, handleEdit, setOpen } = props;
+  const { plant, setPlant, handleEdit, setOpen } = props;
 
   const [form, setForm] = useState(plant);
 

@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
-import userinfo from "../userinfo";
+import React, {
+  // useEffect,
+  useState,
+} from "react";
 
 const EditProfile = (props) => {
   const { profile, setProfile, setOpen, handleEdit } = props;
