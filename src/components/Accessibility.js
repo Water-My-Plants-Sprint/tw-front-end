@@ -37,7 +37,9 @@ function Accessibility (props) {
           <img src={profile.imageUrl} alt=""/>
             <div className="">
               <h3> <b>Name:</b> {profile.name}</h3>
+              <input id='editInput' type='text' name= 'name'/>
               <h3> <b>Phone:</b> {profile.phoneNumber}</h3>
+              <input id='editInput' type='text' name='phone'/>
               <button id="edit"> Edit Profile </button>
             </div>  
          </AccessStyles> 
