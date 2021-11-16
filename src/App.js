@@ -10,17 +10,23 @@ import Profile from "./components/Profile";
 import PlantsList from "./components/PlantsList";
 import Logout from "./components/Logout";
 import Accessibility from "./components/Accessibility";
+import userinfo from "./userinfo";
 function App() {
   const [plantsList, setPlantsList] = useState(plantlist);
-  // const [profile, setProfile] = useState(userinfo);
+  const [profile, setProfile] = useState(userinfo);
 
   return (
     <div>
       <Header />
       <Switch>
         <Route exact path="/register" component={Register} />
-        <Route exact path = "/access">
-          <Accessibility plantsList={plantsList} setPlantsList={setPlantsList}/>
+        <Route exact path="/access">
+          <Accessibility
+            profile={profile}
+            setProfile={setProfile}
+            plantsList={plantsList}
+            setPlantsList={setPlantsList}
+          />
         </Route>
 
         <Route exact path="/" component={Login} />
@@ -33,7 +39,7 @@ function App() {
           <Plant plantsList={plantsList} setPlantsList={setPlantsList} />
         </Route>
         <Route exact path="/profile">
-          <Profile />
+          <Profile profile={profile} setProfile={setProfile} />
         </Route>
         <Route exact path="/logout" component={Logout} />
       </Switch>
