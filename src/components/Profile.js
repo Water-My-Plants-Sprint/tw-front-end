@@ -5,7 +5,7 @@ import EditProfile from "./EditProfile";
 import { Dialog, Transition } from "@headlessui/react";
 
 const Profile = (props) => {
-  const [profile, setProfile] = useState(userinfo);
+  const { profile, setProfile } = props;
 
   const [open, setOpen] = useState(false);
 
@@ -102,7 +102,6 @@ const Profile = (props) => {
                   >
                     Edit Profile
                   </button>
-              
                 </div>
               </div>
             </div>
