@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 import { useParams } from "react-router-dom";
 import { Dialog, Transition } from "@headlessui/react";
+import "./Plant.css";
 
 import EditPlant from "./EditPlant";
 
@@ -36,7 +37,7 @@ const Plant = (props) => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="card">
       <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"
@@ -133,8 +134,8 @@ const Plant = (props) => {
               <p className="mt-8 prose-sm text-gray-500">{plant.description}</p>
             </div>
 
-            <div className="mt-8">
-              <p className="prose-lg text-gray-900">
+            <div className="watering-img">
+              <p className="watering">
                 Watering Frequency:
                 {plant.h2oFrequency} X / day
               </p>
@@ -156,6 +157,16 @@ const Plant = (props) => {
               </button>
             </div>
           </div>
+        </div>
+        <div class="bottom-buttons">
+          <button class="button">
+            {" "}
+            <h3>How to Water your plants</h3>{" "}
+          </button>
+          <button class="button">
+            {" "}
+            <h3>How to Fertilize</h3>{" "}
+          </button>
         </div>
       </main>
     </div>
