@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from "react";
-import userinfo from "../userinfo";
 import EditProfile from "./EditProfile";
 
 import { Dialog, Transition } from "@headlessui/react";
