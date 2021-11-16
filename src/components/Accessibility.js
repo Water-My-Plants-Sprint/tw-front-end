@@ -1,11 +1,11 @@
-import React, { useState, Fragment } from "react";
-import { useParams } from "react-router-dom";
-import { Dialog, Transition } from "@headlessui/react";
-import accessStyles from '../Theme/AccessStyles'
+import React, { useState } from "react";
+// import { useParams } from "react-router-dom";
+// import { Dialog, Transition } from "@headlessui/react";
+// import accessStyles from '../Theme/AccessStyles'
 
 import userinfo from "../userinfo";
-import EditPlant from "./EditPlant";
-import EditProfile from "./EditProfile";
+// import EditPlant from "./EditPlant";
+// import EditProfile from "./EditProfile";
 import AccessStyles from "../Theme/AccessStyles";
 
 
@@ -19,7 +19,9 @@ function Accessibility (props) {
         open === false ? setOpen(true): setOpen(false);
     }
 
-
+    const update = () => {
+        setProfile({...profile})
+    }
 
     return (
         <div className="accessAll">
@@ -49,7 +51,8 @@ function Accessibility (props) {
                 Edit Profile
               </button>
               <button 
-               className = { !open ? 'none edit submit' : 'edit submit' }>
+               className = { !open ? 'none edit submit' : 'edit submit' }
+               onClick={update}>
                 Submit
               </button>
               <button 
