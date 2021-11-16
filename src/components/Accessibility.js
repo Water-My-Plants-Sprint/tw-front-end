@@ -7,6 +7,7 @@ import userinfo from "../userinfo";
 // import EditPlant from "./EditPlant";
 // import EditProfile from "./EditProfile";
 import AccessStyles from "../Theme/AccessStyles";
+import PlantsList from "./PlantsList";
 
 
 
@@ -60,7 +61,8 @@ function Accessibility (props) {
               onClick={click}>
                   Cancel</button>
             </div>  
-         </AccessStyles> 
+         </AccessStyles>
+         
         </div>
     );
     
