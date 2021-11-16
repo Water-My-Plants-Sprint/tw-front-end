@@ -15,13 +15,25 @@ const AccessStyles = styled.div`
     h3{
         font-size: 2rem;
     }
-    #edit{
+    input{
+        border:black solid 3px;
+        border-radius: 6px;
+        font-size: 1.5rem;
+    }
+    .none{
+        display: none;
+    }
+    .edit{
         color: ${props => props.theme.buttonColor};
         background-color: ${props => props.theme.buttonBG};
         font-size: 1.5rem;
         padding: 2% 4%;
         border-radius: 10px;
     }
+    .cancel{
+        margin-left: 3%;
+    }
+    
 `
 
 export default AccessStyles;

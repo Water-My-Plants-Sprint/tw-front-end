@@ -37,10 +37,12 @@ function Accessibility (props) {
           <img src={profile.imageUrl} alt=""/>
             <div className="">
               <h3> <b>Name:</b> {profile.name}</h3>
-              <input id='editInput' type='text' name= 'name'/>
+              <input id='editInput' className='none' type='text' name= 'name'/>
               <h3> <b>Phone:</b> {profile.phoneNumber}</h3>
-              <input id='editInput' type='text' name='phone'/>
-              <button id="edit"> Edit Profile </button>
+              <input id='editInput' className='none' type='text' name='phone'/>
+              <button className='edit'> Edit Profile </button>
+              <button className='edit submit none'>Submit</button>
+              <button className='edit cancel none'>Cancel</button>
             </div>  
          </AccessStyles> 
         </div>
