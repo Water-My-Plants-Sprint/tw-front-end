@@ -6,6 +6,7 @@ import accessStyles from '../Theme/AccessStyles'
 import userinfo from "../userinfo";
 import EditPlant from "./EditPlant";
 import EditProfile from "./EditProfile";
+import AccessStyles from "../Theme/AccessStyles";
 
 
 
@@ -32,18 +33,14 @@ function Accessibility (props) {
 
     return (
         <div className="accessAll">
-         <div className="profile">
+         <AccessStyles className="profile">
           <img src={profile.imageUrl} alt=""/>
             <div className="">
-              <h3>Name: {profile.name}</h3>
-              <h3>Phone: {profile.phoneNumber}</h3>
-              <button
-                  type="submit"
-                  id="submit"
-                  onClick={handleEditSelect}
-              />
+              <h3> <b>Name:</b> {profile.name}</h3>
+              <h3> <b>Phone:</b> {profile.phoneNumber}</h3>
+              <button id="edit"> Edit Profile </button>
             </div>  
-         </div> 
+         </AccessStyles> 
         </div>
     );
     
