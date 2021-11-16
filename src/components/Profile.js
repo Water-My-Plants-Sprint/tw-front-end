@@ -89,6 +89,8 @@ const Profile = (props) => {
                 <div className="text-lg leading-6 font-medium space-y-1">
                   <h3>Name: {profile.name}</h3>
                   <h3>Phone: {profile.phoneNumber}</h3>
+                  <h3>Bio: {profile.bio}</h3>
+                  <h3>Interests: {profile.Interests}</h3>
                 </div>
 
                 <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 ">
@@ -100,6 +102,7 @@ const Profile = (props) => {
                   >
                     Edit Profile
                   </button>
+              
                 </div>
               </div>
             </div>

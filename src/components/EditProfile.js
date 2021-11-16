@@ -86,13 +86,12 @@ const EditProfile = (props) => {
               />
             </div>
           </div>
-
           <div>
             <label
               htmlFor="h2oFrequency"
               className="block text-sm font-medium text-gray-700"
             >
-              Phone
+              Phone Number
             </label>
             <div className="mt-1">
               <input
@@ -103,9 +102,29 @@ const EditProfile = (props) => {
                 value={form.phoneNumber}
                 onChange={handleChange}
                 className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+
               />
             </div>
           </div>
+          <div>
+            <label
+              htmlFor="Notes"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Notes for the Day:
+            </label>
+            <div className="mt-1">
+              <input
+                id="Notes"
+                name="Notes"
+                type="text"
+                required
+                value={form.Notes}
+                onChange={handleChange}
+                className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+              />
+            </div>
+            </div>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
             <button
