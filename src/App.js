@@ -9,6 +9,7 @@ import { Route, Switch } from "react-router-dom";
 import Profile from "./components/Profile";
 import PlantsList from "./components/PlantsList";
 import Logout from "./components/Logout";
+import Accessibility from "./components/Accessibility";
 function App() {
   const [plantsList, setPlantsList] = useState(plantlist);
   // const [profile, setProfile] = useState(userinfo);
@@ -19,7 +20,7 @@ function App() {
       <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path = "/access">
-          
+          <Accessibility plantsList={plantsList} setPlantsList={setPlantsList}/>
         </Route>
 
         <Route exact path="/" component={Login} />
