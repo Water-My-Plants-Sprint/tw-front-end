@@ -3,6 +3,7 @@ import userinfo from "../userinfo";
 import EditProfile from "./EditProfile";
 
 import { Dialog, Transition } from "@headlessui/react";
+import Accessibility from "./Accessibility";
 
 const Profile = (props) => {
   const [profile, setProfile] = useState(userinfo);

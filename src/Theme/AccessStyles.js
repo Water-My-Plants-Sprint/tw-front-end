@@ -19,6 +19,9 @@ const AccessStyles = styled.div`
         border:black solid 3px;
         border-radius: 6px;
         font-size: 1.5rem;
+        margin: 3% 1%;
+        color:black;
+        box-shadow: black 3px 2px 2px;
     }
     .none{
         display: none;

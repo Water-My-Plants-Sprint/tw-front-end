@@ -20,6 +20,7 @@ function Accessibility (props) {
     }
 
 
+
     return (
         <div className="accessAll">
          <AccessStyles className="profile">
@@ -48,11 +49,13 @@ function Accessibility (props) {
                 Edit Profile
               </button>
               <button 
-               className = { !open ? 'none edit submit' : 'edit submit' }
-               onClick={click}>
+               className = { !open ? 'none edit submit' : 'edit submit' }>
                 Submit
               </button>
-              <button className={ !open ? 'edit cancel none' : 'edit cancel'}>Cancel</button>
+              <button 
+              className={ !open ? 'edit cancel none' : 'edit cancel'}
+              onClick={click}>
+                  Cancel</button>
             </div>  
          </AccessStyles> 
         </div>
