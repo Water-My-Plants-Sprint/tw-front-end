@@ -102,8 +102,7 @@ const Profile = (props) => {
                   >
                     Edit Profile
                   </button>
-                  <div className = 'ToDoList'>
-                  </div>
+              
                 </div>
               </div>
             </div>
