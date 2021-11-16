@@ -14,22 +14,11 @@ import AccessStyles from "../Theme/AccessStyles";
 function Accessibility (props) {
     const [profile, setProfile] = useState(userinfo);
     const [open, setOpen] = useState(false);
-    
-    const handleEdit = (profile) => {
-      setOpen(false);
-      // axiosWithAuth()
-      // .put(`website.com/api/login/${ID}`, profile)
-      // .then((res) => {
-      //   setProfile(res.data);
-      // })
-      // .catch((err) => {
-      //   console.log(err);
-      // });
-    };
-  
-    const handleEditSelect = () => {
-      setOpen(true);
-    };
+
+    const click = () => {
+        open === false ? setOpen(true): setOpen(false);
+    }
+
 
     return (
         <div className="accessAll">
@@ -37,12 +26,33 @@ function Accessibility (props) {
           <img src={profile.imageUrl} alt=""/>
             <div className="">
               <h3> <b>Name:</b> {profile.name}</h3>
-              <input id='editInput' className='none' type='text' name= 'name'/>
+              <input 
+               id='editInput' 
+               className= { !open ? 'none' : null }
+               type='text' 
+               name= 'name'
+               placeholder='Type name'
+               />
               <h3> <b>Phone:</b> {profile.phoneNumber}</h3>
-              <input id='editInput' className='none' type='text' name='phone'/>
-              <button className='edit'> Edit Profile </button>
-              <button className='edit submit none'>Submit</button>
-              <button className='edit cancel none'>Cancel</button>
+              <input 
+               id='editInput' 
+               className={ !open ? 'none' : null }
+               type='text' 
+               name='phone'
+               placeholder='Type phone number'
+               /> <br/>
+              <button 
+               className={ open ? 'none' : 'edit ' }
+               onClick={click}
+              >
+                Edit Profile
+              </button>
+              <button 
+               className = { !open ? 'none edit submit' : 'edit submit' }
+               onClick={click}>
+                Submit
+              </button>
+              <button className={ !open ? 'edit cancel none' : 'edit cancel'}>Cancel</button>
             </div>  
          </AccessStyles> 
         </div>
