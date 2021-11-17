@@ -6,22 +6,16 @@ const AccessPlants = styled.div`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 3%;
     width: 100%;
     text-align: center;
-    width: 90%;
     background-color: ${props => props.theme.buttonBG};
-    border-radius: 20px;
 
     .myPlants{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: ${props => props.theme.buttonColor};
-        margin: 2%;
-        border-radius: 30px;
-        
+        margin: 2%;        
     }
     .each{
         display: flex;
@@ -32,6 +26,7 @@ const AccessPlants = styled.div`
         margin: 0 2%;
         background-color: ${props => props.theme.buttonColor};
         border-radius: 30px;
+        padding: 2%;
     }
     img{
         border-radius: 20px;
@@ -45,7 +40,7 @@ const AccessPlants = styled.div`
         text-shadow: black 2px 2px 2px;
     }
     h4{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: bold;
     }
     h5{
@@ -79,7 +74,7 @@ const AccessPlants = styled.div`
         align-items: center;
 
         h3{
-            font-size: 2.7rem;
+            font-size: 4rem;
         }
         h4{
             font-size: 2.5rem;
@@ -98,7 +93,20 @@ const AccessPlants = styled.div`
             width: 100%;
             margin: 5%;
         }
-
+        .info{
+            padding: none;
+        }
+    @media(max-width:500px){
+        h3{
+            font-size: 3rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        h5{
+            font-size: 1.5rem;
+        }
+    }
     }
     
 `

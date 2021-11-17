@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 // import { useParams } from "react-router-dom";
 // import { Dialog, Transition } from "@headlessui/react";
 // import EditPlant from './EditPlant';
@@ -36,11 +37,13 @@ function Accessibility(props) {
     click();
   };
 
+  
+
   return (
     <div className="accessAll">
       <AccessStyles className="profile">
         <img src={profile.imageUrl} alt="" />
-        <div className="">
+        <div className="info">
           <h3>
             {" "}
             <b>Name:</b> {profile.name}
@@ -88,14 +91,19 @@ function Accessibility(props) {
       <AccessPlants> 
         <h3> Your plants </h3> <br/>
         <div className= 'myPlants'>
-          {plantlist.map((ea, idx) => ( 
+          {plantlist.map((ea, idx) => {
+            
+            return ( 
+
             <div className='each' key={idx}>
               <h4> {ea.nickname} </h4>
-              <img src={ea.image} alt='Your plant'/>
-              <h5> Water <b>{ea.h2oFrequency === 1 ? 'once' : ea.h2oFrequency + ' times'}</b> per day.</h5>
+              <Link to={'plants/'+ ea.plant_id}>
+              <img src={ea.image} alt='Your plant' />
+              </Link>
+              <h5> Water <b>{ea.h2oFrequency === 1 ? '1 time' : ea.h2oFrequency + ' times'}</b> per day.</h5>
               
             </div>
-          ))}
+          )})}
        </div>
       </AccessPlants>
     </div>

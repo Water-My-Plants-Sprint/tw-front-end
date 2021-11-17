@@ -7,7 +7,7 @@ const AccessStyles = styled.div`
     justify-content: center;
     align-items: center;
     margin: 3%;
-    width: 100%;
+    
 
     img{
         border-radius: 50px;
@@ -24,6 +24,9 @@ const AccessStyles = styled.div`
         color:black;
         box-shadow: ${props => props.theme.buttonBG} 3px 2px 2px;
     }
+    button{
+        margin:3%;
+    }
     .none{
         display: none;
     }
@@ -34,6 +37,11 @@ const AccessStyles = styled.div`
         padding: 2% 4%;
         border-radius: 10px;
     }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .cancel{
         margin-left: 3%;
     }
@@ -41,9 +49,9 @@ const AccessStyles = styled.div`
         display: flex;
         flex-direction: column;
 
-        img{
+        /* img{
             margin-right: 10%;
-        }
+        } */
 
     }
     
