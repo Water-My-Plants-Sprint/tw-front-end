@@ -56,7 +56,8 @@ const AccessPlants = styled.div`
     // flex-direction: row;
     // justify-content: space-evenly;
     // align-items: center;
-    // margin: 3% 1%;
+    margin: 3% 1%;
+    padding: 2% 0%;
     display: grid;
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: auto;
