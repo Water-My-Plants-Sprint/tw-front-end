@@ -8,16 +8,20 @@ import plantlist from '../plantlist'
 
 import AccessStyles from "../Theme/AccessStyles";
 import AccessPlants from "../Theme/AccessPlants";
+import App from "../App";
 
 function Accessibility(props) {
   // const { plantList } = props;
   const [open, setOpen] = useState(false);
+  const [apOpen,setApOpen] = useState(false);
   
 
   // passed down as props so both the profile page and this page use the same slice of state
-  const { profile, setProfile } = props;
+  const { profile, setProfile, initialForm } = props;
+ 
 
   // Form and event handler that you will be able to use for multiple components
+  // Profile handlers
   const [form, setForm] = useState(profile);
   const handleChange = (e) => {
     setForm({
@@ -25,16 +29,33 @@ function Accessibility(props) {
       [e.target.name]: e.target.value,
     });
   };
-
   const click = () => {
-    open === false ? setOpen(true) : setOpen(false);
-  };
-
+      open ? setOpen(false) : setOpen(true);
+    };
   const update = (e) => {
+      e.preventDefault();
+      setProfile(form);
+      click();
+    };
+
+  // Plant handlers
+  const [apForm, setApForm] = useState(initialForm);
+  const apHandleChange = (e) => {
+      setForm({
+        ...apForm,
+        [e.target.name]: e.target.value,
+      });
+    };
+  
+  const apClick = () => {
+    apOpen ? setApOpen(false) : setApOpen(true);
+  }
+
+  const apUpdate = (e) => {
     e.preventDefault();
-    setProfile(form);
-    click();
-  };
+    apClick();
+  }
+  
 
   
 
@@ -89,6 +110,64 @@ function Accessibility(props) {
       </AccessStyles>
       <AccessPlants> 
         <h3> Your plants </h3> <br/>  
+        <h4 
+         className={apOpen ? 'none' : 'addPlant'} 
+         onClick={apClick}
+         > 
+         Add a Plant 
+         </h4>
+        <div className={apOpen ? 'form' : 'none'} >
+          <h4> Add Plant Form </h4>
+          <label>Nickname</label>
+          <input
+            type='text'
+            name='nickname'
+            // value={apForm.nickname}
+            onChange={apHandleChange}
+          />
+          <label>Species</label>
+          <input
+            type='text'
+            name='species'
+            // value={apForm.species}
+            onChange={apHandleChange}
+          />
+          <label>Watering Frequency</label>
+          <input
+            type='text'
+            name='Watering Frequency'
+            // value={apForm.h2oFrequency}
+            onChange={apHandleChange}
+          />
+          <label>Image</label>
+          <input
+                type="text"
+                name="image"
+                id="image"
+                // value={apForm.image}
+                onChange={apHandleChange}
+          />
+          <label>Description</label>
+          <input
+                type="description"
+                name="description"
+                required
+                // value={apForm.description}
+                onChange={apHandleChange}
+  
+              />               
+          <button 
+           className={apOpen ? '' : 'none'} 
+           onClick={apUpdate}>
+             Add
+          </button>
+          <button 
+           className={apOpen ? '' : 'none'} 
+           onClick={apClick}>
+             Cancel
+          </button>
+        </div> 
+
         <div className= 'myPlants'>
           {plantlist.map((ea, idx) => ( 
             <div className='each' key={idx}>
@@ -100,7 +179,6 @@ function Accessibility(props) {
             </div>
           ))}
         </div>
-        <h4 className='addPlant'> Add a Plant </h4>
       </AccessPlants>
     </div>
   );
