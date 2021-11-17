@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 // import { useParams } from "react-router-dom";
 // import { Dialog, Transition } from "@headlessui/react";
-// import accessStyles from '../Theme/AccessStyles'
-// import EditPlant from "./EditPlant";
-// import EditProfile from "./EditProfile";
+import EditPlant from './EditPlant';
+import plantList from './PlantsList';
+import plantlist from '../plantlist'
+import AddPlant from './AddPlant';
+
 import AccessStyles from "../Theme/AccessStyles";
+import AccessPlants from "../Theme/AccessPlants";
 
 function Accessibility(props) {
+  const { plantList } = props;
   const [open, setOpen] = useState(false);
+  
 
   // passed down as props so both the profile page and this page use the same slice of state
   const { profile, setProfile } = props;
@@ -80,6 +85,19 @@ function Accessibility(props) {
           </button>
         </div>
       </AccessStyles>
+      <AccessPlants> 
+        <h3> Your plants </h3> <br/>
+        <div className= 'myPlants'>
+          {plantlist.map((ea, idx) => ( 
+            <div className='each' key={idx}>
+              <h4> {ea.nickname} </h4>
+              <img src={ea.image} alt='Your plant'/>
+              <h5> Water {ea.h2oFrequency === 1 ? 'once' : ea.h2oFrequency + ' times'} per day.</h5>
+              
+            </div>
+          ))}
+       </div>
+      </AccessPlants>
     </div>
   );
 }
