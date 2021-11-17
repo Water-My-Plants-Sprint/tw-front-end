@@ -78,34 +78,35 @@ const PlantsList = (props) => {
           </div>
         </Dialog>
       </Transition.Root>
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <div className="bg-white">
-          <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8 ">
+        <div className="bg-white shadow-sm rounded-md">
+          {/* <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"> */}
+          <div className="max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:max-w-7xl ">
             <div className="md:flex md:items-center md:justify-between">
               <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
-                Plant Collection
+                My Plants
               </h2>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
               {plantsList.map((plant) => (
                 <div key={plant.plant_id} className="group relative">
-                  <div className="w-full h-56 bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75 lg:h-72 xl:h-80">
+                  <div className=" w-full h-56 bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75 lg:h-72 xl:h-80">
                     <img
                       onClick={(e) => handleClick(e, plant)}
                       src={plant.image}
                       alt={plant.image}
                       className="w-full h-full object-center object-cover"
                     />
+                    <h2>{plant.nickname}</h2>
                   </div>
-                  <h3 className="mt-4 text-sm text-gray-700">
-                    {/* <a href={product.href}>
-                          <span className="absolute inset-0" />
-                          {plant.nickname}
-                        </a> */}
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-500"></p>
-                  <p className="mt-1 text-sm font-medium text-gray-900"></p>
+
+                  <p className="mt-4 mb-6 text-lg text-gray-700  font-bold	">
+                    {plant.nickname}
+                  </p>
+                  {/*  */}
+
+                  {/*  */}
                 </div>
               ))}
             </div>
