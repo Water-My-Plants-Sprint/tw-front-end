@@ -1,10 +1,12 @@
 .card {
   background-color: rgb(243, 236, 236);
   border-radius: 4%;
-  margin-top: 20px;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-top: 1%;
+  box-shadow: 3px 4px 2px rgb(33, 138, 65);
+  border-bottom: 2px dashed rgb(8, 56, 22);
 }
 
 .watering {
@@ -25,7 +27,7 @@
 }
 
 .bottom-buttons {
-  background-color: #2b7e62;
+  border-top: 2px dashed rgb(8, 56, 22);
   color: rgb(208, 228, 213);
   display: flex;
   align-items: center;
@@ -36,18 +38,17 @@
 }
 
 .button {
-  background-color: rgb(8, 56, 22);
-  padding: 6px;
+  margin-top: 15px;
+  background-color: rgb(33, 126, 98);
+  padding: 8px;
   border-radius: 4%;
 }
 
 .button:hover {
-  color: #b5c7b7;
-  font-weight: bold;
-  border-radius: 8%;
+  color: #fafafa;
 }
 
-.watering-info {
+.bottom-info {
   background-color: rgb(243, 236, 236);
   text-align: center;
   margin-top: 1%;

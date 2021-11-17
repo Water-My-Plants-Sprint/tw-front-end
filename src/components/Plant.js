@@ -172,7 +172,7 @@ const Plant = (props) => {
             <h3>How to Water your plants</h3>{" "}
           </button>
         </div>
-        <p className="watering-info"> {water} </p>
+        <p className="bottom-info"> {water} </p>
       </main>
     </div>
   );
