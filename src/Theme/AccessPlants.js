@@ -133,7 +133,7 @@ const AccessPlants = styled.div`
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-row-gap: 20px;
-      justify-items: stretch;
+      justify-items: center;
       align-items: center;
     }
     .each {
