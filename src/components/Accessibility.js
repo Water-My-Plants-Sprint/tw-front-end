@@ -8,7 +8,7 @@ import plantlist from '../plantlist'
 
 import AccessStyles from "../Theme/AccessStyles";
 import AccessPlants from "../Theme/AccessPlants";
-import App from "../App";
+// import App from "../App";
 
 function Accessibility(props) {
   // const { plantList } = props;
@@ -53,6 +53,7 @@ function Accessibility(props) {
 
   const apUpdate = (e) => {
     e.preventDefault();
+    setApForm(apForm);
     apClick();
   }
   
