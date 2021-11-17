@@ -76,16 +76,10 @@ const Profile = (props) => {
       </Transition.Root>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 md:my-16">
-        {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
         <div className="max-w-3xl mx-auto">
           <div className="bg-white overflow-hidden shadow sm:rounded-lg">
             <div className="px-4 py-5 sm:p-6">
               {" "}
-              {/* <img
-                className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                src={profile.imageUrl}
-                alt=""
-              /> */}
               <div className="sm:flex">
                 <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
                   <img
@@ -128,39 +122,6 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-yellow-50 overflow-hidden sm:rounded-lg">
-        <div className="px-4 py-5 sm:p-6 flex justify-evenly">
-          {" "}
-          <div className="border-solid border-4 border-light-blue-500 w-1/4 py-10 px-6 bg-white text-center rounded-lg xl:px-10 xl:text-left">
-            <div className="space-y-6">
-              <img
-                className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                src={profile.imageUrl}
-                alt=""
-              />
-              <div className="space-y-2">
-                <div className="text-lg leading-6 font-medium space-y-1">
-                  <h3>Name: {profile.name}</h3>
-                  <h3>Phone: {profile.phoneNumber}</h3>
-                  <h3>Bio: {profile.bio}</h3>
-                  <h3>Interests: {profile.Interests}</h3>
-                </div>
-
-                <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 ">
-                  <button
-                    type="submit"
-                    id="submit"
-                    onClick={handleEditSelect}
-                    className="w-full bg-green-700 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500"
-                  >
-                    Edit Profile
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
