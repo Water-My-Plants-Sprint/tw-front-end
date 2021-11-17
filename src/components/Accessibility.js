@@ -89,22 +89,19 @@ function Accessibility(props) {
         </div>
       </AccessStyles>
       <AccessPlants> 
-        <h3> Your plants </h3> <br/>
+        <h3> Your plants </h3> <br/>  
         <div className= 'myPlants'>
-          {plantlist.map((ea, idx) => {
-            
-            return ( 
-
+          {plantlist.map((ea, idx) => ( 
             <div className='each' key={idx}>
               <h4> {ea.nickname} </h4>
               <Link to={'plants/'+ ea.plant_id}>
               <img src={ea.image} alt='Your plant' />
               </Link>
-              <h5> Water <b>{ea.h2oFrequency === 1 ? '1 time' : ea.h2oFrequency + ' times'}</b> per day.</h5>
-              
+              <h5> Water <b>{ea.h2oFrequency === 1 ? '1 time' : ea.h2oFrequency + ' times'}</b> <br/> per day.</h5>
             </div>
-          )})}
-       </div>
+          ))}
+        </div>
+        <h4 className='addPlant'> Add a Plant </h4>
       </AccessPlants>
     </div>
   );

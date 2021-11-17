@@ -10,63 +10,65 @@ const AccessPlants = styled.div`
     text-align: center;
     background-color: ${props => props.theme.buttonBG};
 
-    .myPlants{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 2%;        
-    }
-    .each{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width:23%;
-        margin: 0 2%;
-        background-color: ${props => props.theme.buttonColor};
-        border-radius: 30px;
-        padding: 2%;
-    }
-    img{
-        border-radius: 20px;
-        margin: 2%;
-        height: 15vh;
-    }
-    h3{
-        font-size: 4rem;
-        font-weight: bold;
-        color: ${props => props.theme.buttonColor};
-        text-shadow: black 2px 2px 2px;
-    }
-    h4{
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-    h5{
-        font-size: 1.2rem;
-    }
-    input{
-        border:${props => props.theme.buttonBG} solid 3px;
-        border-radius: 6px;
-        font-size: 1.5rem;
-        margin: 3% 1%;
-        color:black;
-        box-shadow: ${props => props.theme.buttonBG} 3px 2px 2px;
-    }
-    .none{
-        display: none;
-    }
-    .edit{
-        color: ${props => props.theme.buttonColor};
-        background-color: ${props => props.theme.buttonBG};
-        font-size: 1.5rem;
-        padding: 2% 4%;
-        border-radius: 10px;
-    }
-    .cancel{
-        margin-left: 3%;
-    }
+        img{
+            border-radius: 20px;
+            margin: 2%;
+            height: 17vh;
+            transition: .5s;
+        }
+        img:hover{
+            opacity: 0.6;
+        }
+        h3{
+            font-size: 4rem;
+            font-weight: bold;
+            color: ${props => props.theme.buttonColor};
+            text-shadow: black 2px 2px 2px;
+        }
+        h4{
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5%;
+        }
+        h5{
+            font-size: 1.2rem;
+        }
+        .myPlants{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 3% 1%;   
+            background-color: ${props => props.theme.buttonColor};  
+            border-radius: 30px;   
+        }
+        .each{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3%;
+        }
+        .none{
+            display: none;
+        }
+        .edit{
+            color: ${props => props.theme.buttonColor};
+            background-color: ${props => props.theme.buttonBG};
+            font-size: 1.5rem;
+            padding: 2% 4%;
+            border-radius: 10px;
+        }
+        .addPlant{
+            font-size: 2rem;
+            color: ${props => props.theme.buttonColor};
+            text-shadow: black 2px 2px 2px;
+            text-decoration: underline;
+            margin: 0;
+        }
+        .cancel{
+            margin-left: 3%;
+        }
+
     @media(max-width:800px){
         display: flex;
         flex-direction: column;
@@ -87,7 +89,7 @@ const AccessPlants = styled.div`
             flex-direction:column;
             justify-content: center;
             align-items: center;
-            width: 60%;
+            width: 85%;
         }
         .each{
             width: 100%;

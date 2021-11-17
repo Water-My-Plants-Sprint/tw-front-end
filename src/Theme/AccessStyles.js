@@ -6,7 +6,7 @@ const AccessStyles = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3%;
+    margin: 7% 0;
     
 
     img{
