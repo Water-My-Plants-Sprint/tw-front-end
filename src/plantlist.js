@@ -10,7 +10,7 @@ const plantdata = [
   },
   {
     plant_id: 2,
-    nickname: "Almond blossom",
+    nickname: "Blossom",
     species: "Prunus amygdalus",
     h2oFrequency: 2,
     image: "https://i.imgur.com/6A3WI8E.jpg",
@@ -28,10 +28,67 @@ const plantdata = [
   },
   {
     plant_id: 4,
+    nickname: "Rose",
+    species: "Rosa rubiginosa",
+    h2oFrequency: 4,
+    image: "https://i.imgur.com/iIvyh8T.jpg",
+    description:
+      "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
+  },
+
+  {
+    plant_id: 5,
+    nickname: "Oriental lily",
+    species: "Lilium orientalis",
+    h2oFrequency: 4,
+    image: "https://i.imgur.com/4LUuvOy.jpg",
+    description:
+      "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
+  },
+  {
+    plant_id: 6,
+    nickname: "Monstera",
+    species: "Monstera deliciosa",
+    h2oFrequency: 4,
+    image: "https://i.imgur.com/DQvcUDZ.jpg",
+    description:
+      "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
+  },
+  {
+    plant_id: 7,
     nickname: "Clarke's geranium",
     species: "Geranium clarkei",
     h2oFrequency: 4,
     image: "https://i.imgur.com/orqT9BJ.jpg",
+    description:
+      "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
+  },
+  {
+    plant_id: 8,
+    nickname: "Jasmine",
+    species: "Cestrum nocturnum",
+    h2oFrequency: 4,
+    image: "https://i.imgur.com/ag98GTS.jpg",
+    description:
+      "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
+  },
+
+  {
+    plant_id: 9,
+    nickname: "White poppy",
+    species: "Arctomecon merriamii",
+    h2oFrequency: 4,
+    image: "https://i.imgur.com/i8wLzYH.jpg",
+    description:
+      "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
+  },
+
+  {
+    plant_id: 10,
+    nickname: "Saguaro Cactus",
+    species: "Carnegiea gigantea",
+    h2oFrequency: 4,
+    image: "https://i.imgur.com/Nf0dxLk.jpg",
     description:
       "Geranium clarkei, called Clarke's geranium, is a species of flowering plant in the family Geraniaceae, native to India and cultivated for use in gardens. It is an herbaceous perennial growing to 50 cm (20 in) in height, with deeply cut 7-lobed leaves and white or purple flowers with pink veining in summer. It spreads by underground rhizomes, and is used for groundcover or the front of a border.  A number of geranium species are cultivated for horticultural use and for pharmaceutical products. They are long-lived and most have a mounding habit, with palmately lobed foliage.",
   },
