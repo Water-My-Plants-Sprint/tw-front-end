@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 const AccessPlants = styled.div`
     display: flex;
     flex-direction: column;
@@ -33,6 +31,25 @@ const AccessPlants = styled.div`
         h5{
             font-size: 1.2rem;
         }
+        label{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        button{
+           background-color: ${props => props.theme.buttonBG};
+           color: ${props => props.theme.buttonColor};
+           padding: 1% 4%;
+           border-radius: 10px;
+           margin:1% 0;
+        }
+        input{
+        border:${props => props.theme.buttonBG} solid 3px;
+        border-radius: 6px;
+        font-size: 1.2rem;
+        margin: 1% 0%;
+        color:black;
+        box-shadow: ${props => props.theme.buttonBG} 3px 2px 2px;
+    }
         .myPlants{
             display: flex;
             flex-direction: row;
@@ -67,6 +84,17 @@ const AccessPlants = styled.div`
         }
         .cancel{
             margin-left: 3%;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: ${props => props.theme.buttonColor};
+            padding: 7% 0;
+            margin: 1% 15%;
+            border: black 2px solid;
+            border-radius:10px;
         }
 
     @media(max-width:800px){

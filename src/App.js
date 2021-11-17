@@ -14,7 +14,6 @@ import userinfo from "./userinfo";
 function App() {
   const [plantsList, setPlantsList] = useState(plantlist);
   const [profile, setProfile] = useState(userinfo);
-
   return (
     <div>
       <Header />

@@ -2,6 +2,7 @@ import React, {
   // useEffect,
   useState,
 } from "react";
+import Accessibility from "./Accessibility";
 
 const initialForm = {
   plant_id: 8,
@@ -51,6 +52,8 @@ const AddPlant = (props) => {
   return (
     // <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
     <div>
+      <Accessibility 
+        initialForm={initialForm}/>
       <div>
         <form
           className="space-y-6"
