@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 const AccessPlants = styled.div`
     display: flex;
     flex-direction: column;

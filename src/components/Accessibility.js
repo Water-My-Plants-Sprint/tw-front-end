@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 // import plantList from './PlantsList';
 import plantlist from '../plantlist'
 
-
 import AccessStyles from "../Theme/AccessStyles";
 import AccessPlants from "../Theme/AccessPlants";
 
