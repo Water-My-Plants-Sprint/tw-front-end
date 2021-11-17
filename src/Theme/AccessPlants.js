@@ -75,9 +75,28 @@ const AccessPlants = styled.div`
     @media(max-width:800px){
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        img{
-            margin-right: 10%;
+        h3{
+            font-size: 2.7rem;
+        }
+        h4{
+            font-size: 2.5rem;
+        }
+        h5{
+            font-size:1.7rem;
+        }
+        .myPlants{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+        .each{
+            width: 100%;
+            margin: 5%;
         }
 
     }
