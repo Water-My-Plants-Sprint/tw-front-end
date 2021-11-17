@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 // import { useParams } from "react-router-dom";
 // import { Dialog, Transition } from "@headlessui/react";
-import EditPlant from './EditPlant';
-import plantList from './PlantsList';
+// import EditPlant from './EditPlant';
+// import plantList from './PlantsList';
 import plantlist from '../plantlist'
-import AddPlant from './AddPlant';
+
 
 import AccessStyles from "../Theme/AccessStyles";
 import AccessPlants from "../Theme/AccessPlants";
 
 function Accessibility(props) {
-  const { plantList } = props;
+  // const { plantList } = props;
   const [open, setOpen] = useState(false);
   
 
@@ -92,7 +92,7 @@ function Accessibility(props) {
             <div className='each' key={idx}>
               <h4> {ea.nickname} </h4>
               <img src={ea.image} alt='Your plant'/>
-              <h5> Water {ea.h2oFrequency === 1 ? 'once' : ea.h2oFrequency + ' times'} per day.</h5>
+              <h5> Water <b>{ea.h2oFrequency === 1 ? 'once' : ea.h2oFrequency + ' times'}</b> per day.</h5>
               
             </div>
           ))}

@@ -34,8 +34,9 @@ const AccessPlants = styled.div`
         border-radius: 30px;
     }
     img{
-        border-radius: 50px;
-        margin: 2%
+        border-radius: 20px;
+        margin: 2%;
+        height: 15vh;
     }
     h3{
         font-size: 4rem;
