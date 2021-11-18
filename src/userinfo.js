@@ -8,7 +8,7 @@ const userinfo = {
 
   phoneNumber: 19998675309,
 
-  bio: "Hi there, My name is Tom Cook and I Love to Plant, this is my quick little about me.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  bio: "Hi there, My name is Tom Cook and I Love to Plant, this is a quick little about me.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 
   interests: "Photography, Volunteering, Reading, Gardening, Art",
 };
