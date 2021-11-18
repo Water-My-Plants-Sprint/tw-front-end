@@ -105,7 +105,7 @@ const Profile = (props) => {
                     </h3>
                     <h3>
                       <b>Interests: </b>
-                      {profile.Interests}
+                      {profile.interests}
                     </h3>
                   </p>
                   <button

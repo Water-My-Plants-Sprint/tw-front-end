@@ -10,7 +10,7 @@ const userinfo = {
 
   bio: "Hi there, My name is Tom Cook and I Love to Plant, this is my quick little about me.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 
-  Interests:"Photography, Volunteering, Reading,Gardening,Art"
+  interests: "Photography, Volunteering, Reading, Gardening, Art",
 };
 
 export default userinfo;
