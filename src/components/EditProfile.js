@@ -107,18 +107,35 @@ const EditProfile = (props) => {
           </div>
           <div>
             <label
-              htmlFor="Notes"
+              htmlFor="bio"
               className="block text-sm font-medium text-gray-700"
             >
-              Notes for the Day:
+              Bio:
             </label>
             <div className="mt-1">
-              <input
-                id="Notes"
-                name="Notes"
-                type="text"
+              <textarea
+                id="bio"
+                name="bio"
                 required
-                value={form.Notes}
+                value={form.bio}
+                onChange={handleChange}
+                className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="interests"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Interests
+            </label>
+            <div className="mt-1">
+              <textarea
+                id="interests"
+                name="interests"
+                required
+                value={form.interests}
                 onChange={handleChange}
                 className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
               />
