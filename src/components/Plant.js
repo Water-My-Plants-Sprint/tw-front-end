@@ -39,7 +39,7 @@ const Plant = (props) => {
   const [water, setWater] = useState("");
   const handleClick = () => {
     setWater(
-      "Just like people, plants thrive in various moisture conditions depending on the plant type and environment. If you’re wondering how often you should water your plants, you’ll first need to learn the language of your plants to know when it’s time to water. Succulents, for example, like to be kept on the dry side and are highly susceptible to rot if over-watered. Tropical potted plants like ferns and calatheas need to be kept consistently moist while other plants like to dry out somewhat between waterings. Understanding your plant’s unique needs and preferences is key before you start watering them. For complete watering instructions for your plants, check out our A-Z Plant Care Guides for all your plant care needs. Rather than setting a strict water schedule, it’s better to pay attention to when the soil feels dry. Make sure you use your finger or moisture meter to check a few inches below the topsoil, and if you’re not detecting any moisture, then it’s time to water."
+      "Just like people, plants thrive in various moisture conditions depending on the plant type and environment. If you’re wondering how often you should water your plants, you’ll first need to learn the language of your plants to know when it’s time to water. Succulents, for example, like to be kept on the dry side and are highly susceptible to rot if over-watered...."
     );
   };
 
